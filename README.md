@@ -11,9 +11,13 @@ According to [this article](https://groups.google.com/forum/?fromgroups=#!topic/
 ```
 
 provide (aka `netstat`) details about TCP/UDP connections currently open under Android OS. Process or app uid is also revealed in those files.
-Using simple code like [this](http://agolovatyuk.blogspot.com/2012/04/android-traffic-statistics-inside.html) it is possible to find the actual package name of the app that created the connection.
+Using simple code like [this](http://agolovatyuk.blogspot.com/2012/04/android-traffic-statistics-inside.html), it is possible to find the actual package name of the app that created the connection.
 
 Some of the networks, notoriously WIFI ones, preserve ephemeral port number of the TCP/UDP packets leaving the system. Using this project, it is possible to detect if the network, your device is currently connected to, leaks this information.
 
 This is a screenshot of the Android app in action. Building it requires [Android Studio](https://developer.android.com/studio/).
 ![alt text](https://raw.githubusercontent.com/rtybase/ephemeral-ports/master/app-screen.png "Andoird app screenshot")
+
+If `myport` (as reported by the remote server) and `Ephemeral port` values are the same, then the network leaks ephemeral port details.
+
+`simple-webserver` folder contains the code for the server side. It's a small Java console application, based on some of the old Sun undocumented features coming with the JDK. Very handly whenever I need to sketch a quick web server behaviour.
