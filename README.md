@@ -15,5 +15,5 @@ Using simple code like [this](http://agolovatyuk.blogspot.com/2012/04/android-tr
 
 Some of the networks, notoriously WIFI ones, preserve ephemeral port number of the TCP/UDP packets leaving the system. Using this project, it is possible to detect if the network, your device is currently connected to, leaks this information.
 
-This is a screenshot of the Android app in action.
-![alt text](https://github.com/rtybase/ephemeral-ports/app-screen.png "Andoird app screenshot")
+This is a screenshot of the Android app in action. Building it requires [Android Studio](https://developer.android.com/studio/).
+![alt text](https://raw.githubusercontent.com/rtybase/ephemeral-ports/master/app-screen.png "Andoird app screenshot")
